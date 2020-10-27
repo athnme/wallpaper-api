@@ -1,0 +1,32 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  color: #5e5e5e;
+  background-color: #e6fcfb;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 32px;
+  margin: 16px auto;
+  transition: 0.3s;
+  box-shadow: 0px 1px 1px -1px rgb(0, 56, 56);
+}
+
+button:hover {
+  box-shadow: 0px 8px 8px -8px teal;
+  transform: scale(1.1);
+}

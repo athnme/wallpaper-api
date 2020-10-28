@@ -26,3 +26,16 @@
   box-shadow: 0px 24px 32px -32px teal;
   z-index: 1;
 }
+
+.favorite-btn {
+  background: none;
+  box-shadow: none;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.favorite-btn:hover {
+  box-shadow: none;
+  transform: scale(2);
+}

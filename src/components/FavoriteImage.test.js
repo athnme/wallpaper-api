@@ -8,11 +8,20 @@ it("renders without crashing", () => {
   ReactDOM.render(<FavoriteImage photoId="UjD08DRW24E" />, div);
 });
 
-it("renders img from unsplash", () => {
+it("renders img UjD08DRW24E from unsplash", () => {
   render(<FavoriteImage photoId="UjD08DRW24E" />);
   const imageElement = screen.getByRole("img");
   expect(imageElement).toBeInTheDocument();
   expect(
     imageElement.src.startsWith("https://source.unsplash.com/UjD08DRW24E")
+  ).toBeTruthy();
+});
+
+it("renders img k38v31SkZdo from unsplash", () => {
+  render(<FavoriteImage photoId="k38v31SkZdo" />);
+  const imageElement = screen.getByRole("img");
+  expect(imageElement).toBeInTheDocument();
+  expect(
+    imageElement.src.startsWith("https://source.unsplash.com/k38v31SkZdo")
   ).toBeTruthy();
 });

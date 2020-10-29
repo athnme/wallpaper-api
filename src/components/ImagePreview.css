@@ -1,0 +1,26 @@
+.imageContainer {
+  margin: 20px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.imageContainer > .icon-button {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.imageThumb {
+  width: 100%;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.imageAuthor {
+  margin: 5px;
+}
